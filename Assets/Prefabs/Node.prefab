@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 646408451744604434}
   - component: {fileID: 1142698822924971577}
   - component: {fileID: 1326723194990955842}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Node
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,4 +119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 0.95226014, b: 0.34528297, a: 0}
-  offSet: {x: 0, y: 0.5, z: 0}
+  turretOffSet: {x: 0, y: 0, z: 0}
+  notEnoughMoneyColor: {r: 0.8415094, g: 0.26127702, b: 0, a: 0}
+  turret: {fileID: 0}
