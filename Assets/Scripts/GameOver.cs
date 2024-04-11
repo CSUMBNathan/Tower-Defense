@@ -7,20 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    public SceneFader sceneFader;
 
     public TextMeshProUGUI roundsText;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string mainMenuScene = "MainMenu";
 
     private void OnEnable()
     {
@@ -29,11 +19,11 @@ public class GameOver : MonoBehaviour
 
     public void Retry()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+        
+        sceneFader.FadeTo(SceneManager.GetActiveScene().name);    }
 
     public void Menu()
     {
-        Debug.Log("Go To Menu");
+        sceneFader.FadeTo(mainMenuScene);
     }
 }
